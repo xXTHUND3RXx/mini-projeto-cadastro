@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Lista de anime para assistir mais tarde</title>
+</head>
+<body>
+    <main class="container-principal">
+        <section class="container-tabela">
+            <h1>Animes para assistir</h1>
+            <table>
+                <!-- <colgroup>
+                    <col style="background-color: #0f0" />
+                    <col span="500" />
+                  </colgroup> -->
+                <thead class="cabecalho-tabela">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Genêro</th>
+                        <th>Episódios</th>
+                        <th>Editar</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-animes">
+                    <tr id="tr">
+                        <!-- <td id="nomeAnime" class="td"></td>
+                        <td id="nomeGenero" class="td"></td>
+                        <td id="numeroEpisodios" class="td"></td>
+                        <td id="botaoEditar">
+                            <button class="btn-icon"><img src="src/images/edit.svg" alt=""></button>
+                        </td>
+                        <td id="botaoExcluir">
+                            <button class="btn-icon"><img src="src/images/delete.svg" alt=""></button>
+                        </td> -->
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn-form" id="btn-add">Adicionar</button> 
+            <div id="container-formulario">
+                <form action="" class="formulario" >
+                    <label for="anime">Nome do anime</label>
+                    <input type="text" id="anime" placeholder="Digite o nome do anime" required>
+                    <label for="genero">Gênero</label>
+                    <input type="text" id="genero" placeholder="Digite o gênero do anime" required>
+                    <label for="episodios">Episódios</label>
+                    <input type="number" id="episodios" placeholder="Digite o número de episódios do anime" required>
+                    <button class="btn-form" id="btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="src/js/index.js"></script>
+</body>
+</html>
