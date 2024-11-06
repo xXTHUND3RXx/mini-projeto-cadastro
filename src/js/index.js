@@ -75,6 +75,14 @@ function salvarAnimesNoLocalStorage() {
     localStorage.setItem('animes', JSON.stringify(animes));
 }
 
+function mostrarFormularioParaEdicao(anime, linha) {
+    formulario.classList.remove('escondido');
+    dadosAnime.nome.value = anime.nome;
+    dadosAnime.genero.value = anime.genero;
+    dadosAnime.episodios.value = anime.episodios;
+    animeParaEditar = {anime, linha};
+}
+
 
 class Anime {
     constructor(nome, genero, episodios, editar, excluir) {
@@ -88,10 +96,6 @@ class Anime {
     
 
     mostrar(){
-        // td[0].innerHTML = this.nome;
-        // td[1].innerHTML = this.genero;
-        // td[2].innerHTML = this.episodios;
-
         // Verifique se a tabela já tem cabeçalhos
         const linhasTabela = tabela.getElementsByTagName('tr');
 
@@ -131,14 +135,6 @@ class Anime {
     
 }
 
-function mostrarFormularioParaEdicao(anime, linha) {
-    formulario.classList.remove('escondido');
-    dadosAnime.nome.value = anime.nome;
-    dadosAnime.genero.value = anime.genero;
-    dadosAnime.episodios.value = anime.episodios;
-    animeParaEditar = {anime, linha};
-}
-
 btnEnviarForm.addEventListener('click', ()=>{
 
     if (animeParaEditar) {
@@ -151,12 +147,6 @@ btnEnviarForm.addEventListener('click', ()=>{
         animeParaEditar.linha.cells[0].innerHTML = animeParaEditar.anime.nome;
         animeParaEditar.linha.cells[1].innerHTML = animeParaEditar.anime.genero;
         animeParaEditar.linha.cells[2].innerHTML = animeParaEditar.anime.episodios;
-
-        // while (animeParaEditar) {
-        //     if (animeParaEditar.anime.nome == '' || animeParaEditar.anime.genero == '' || animeParaEditar.anime.episodios == '') {
-        //         alert('Você não pode prosseguir enquanto não digitar')
-        //     }
-        // }
 
         if (animeParaEditar.anime.nome == '' || animeParaEditar.anime.genero == '' || animeParaEditar.anime.episodios == '') {
             alert('Você não pode prosseguir enquanto não digitar');

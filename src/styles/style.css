@@ -35,52 +35,31 @@
     text-align: center;
     overflow-y: auto;
     position: relative;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 table {
     width: 100%;
     border-spacing: 0em 2em;
-    /* border-collapse: separate; */
-    /* display: flex; */
-    /* justify-content: center; */
     margin-top: 2em;
     max-height: 100%;
-    /* align-items: center; */
-    /* height: 100%; */
-    /* gap: 19em; */
 }
 
 .cabecalho-tabela {
     width: 100%;
 }
 
-tr {
-    /* display: flex;
-    justify-content: space-around; */
-}
 
 td {
-    /* padding: 300px; */
     text-align: center;
-    /* width: max-content; */
     padding: 0.5em;
-    /* margin: auto; */
-    /* width: fit-content; */
 }
 
 
 .btn {
     transition: transform 0.3s ease-in-out;
-    
-    /* animation-name: transform;
-    animation-timing-function: ; */
 }
 
 .btn:hover {
-    /* background-color: red; */
     transform: translateY(-3px)
 }
 
@@ -96,13 +75,6 @@ td {
     height: auto;
 }
 
-#btn-add {
-    
-}
-
-#container-formulario {
-    /* display: none; */
-}
 
 .formulario {
     display: flex;
@@ -119,10 +91,6 @@ td {
     width: 40%;
     z-index: 1000;
     
-}
-
-.container-formulario input{
-    /* width: 50%; */
 }
 
 .mostrar{
