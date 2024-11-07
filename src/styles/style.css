@@ -85,11 +85,12 @@ td {
     left: 50%; /* 295px */
     top:  10%; /* 165px */
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.842);
+    background-color: rgba(80, 103, 155, 0.616);
     padding: 2em;
     border-radius: 10px;
     width: 40%;
     z-index: 1000;
+    color: #0F2A41;
     
 }
 
